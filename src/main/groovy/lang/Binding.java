@@ -17,6 +17,7 @@ package groovy.lang;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.io.Serializable;
 
 /**
  * Represents the variable bindings of a script which can be altered
@@ -27,7 +28,7 @@ import java.util.Map;
  * @author <a href="mailto:james@coredevelopers.net">James Strachan</a>
  * @version $Revision$
  */
-public class Binding extends GroovyObjectSupport {
+public class Binding extends GroovyObjectSupport implements Serializable{
     private Map variables;
 
     public Binding() {

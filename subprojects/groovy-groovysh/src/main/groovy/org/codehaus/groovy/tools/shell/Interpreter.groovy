@@ -58,7 +58,7 @@ class Interpreter
 
         Class type
         try {
-            Script script = shell.parse(source, SCRIPT_FILENAME)
+            Script script = shell.parse(source, SCRIPT_FILENAME + (new Date().getTime()).toString())
             type = script.getClass()
 
             log.debug("Compiled script: $script")

@@ -22,6 +22,7 @@ import org.codehaus.groovy.runtime.InvokerHelper;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.Serializable;
 
 /**
  * This object represents a Groovy script
@@ -30,7 +31,7 @@ import java.io.IOException;
  * @author Guillaume Laforge
  * @version $Revision$
  */
-public abstract class Script extends GroovyObjectSupport {
+public abstract class Script extends GroovyObjectSupport implements Serializable {
     private Binding binding;
 
     protected Script() {

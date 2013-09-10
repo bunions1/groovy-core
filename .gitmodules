@@ -1,0 +1,3 @@
+[submodule "subprojects/groovy-spark"]
+	path = subprojects/groovy-spark
+	url = https://github.com/bunions1/groovy-spark.git

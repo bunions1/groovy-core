@@ -83,3 +83,4 @@ user.gradle
 /subprojects/groovy-xml/.project
 /subprojects/groovy-xml/.settings
 /subprojects/groovy-xml/.classpath
+.DS_Store

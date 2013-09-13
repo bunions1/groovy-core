@@ -408,7 +408,9 @@ def isJava15() {
     System.properties['java.version'].contains('1.5')
 }
 def modules() {
-    subprojects.findAll { it.name =~ /groovy-(?!all-tests)/ }
+    subprojects.findAll { it.name =~ /groovy-(?!all-tests)/ && 
+		it.name =~ /groovy-(?!spark)/ && 
+		it.name =~ /groovy-(?!spark-example)/ }
 }
 
 // provide to other build scripts
